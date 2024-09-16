@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel=icon href=/images/favicon.svg>
+  <title>SpaceDrop | <%= roomId %></title>
+
+  <!-- Search Engine -->
+  <meta name="description" content="SpaceDrop is a peer to peer file and text exchanging web application that allows you to transfer files or texts from your clipboard directly between devices without installing any app or uploading any server.">
+  <meta name="keywords" content="upload, file transfer, file sharing, peer to peer, webrtc, web app">
+  <meta name="image" content="https://spacedrop.app/images/splash2.png">
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="SpaceDrop">
+  <meta itemprop="description" content="SpaceDrop is a peer to peer file and text exchanging web application that allows you to transfer files or texts from your clipboard directly between devices without installing any app or uploading any server.">
+  <meta itemprop="image" content="https://spacedrop.app/images/splash2.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SpaceDrop">
+  <meta name="twitter:description" content="SpaceDrop is a peer to peer file and text exchanging web application that allows you to transfer files or texts from your clipboard directly between devices without installing any app or uploading any server.">
+  <meta name="twitter:site" content="@spacedrop">
+  <meta name="twitter:image:src" content="https://spacedrop.app/images/splash2.png">
+
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="title" property="og:title" content="SpaceDrop">
+  <meta name="description" property="og:description" content="SpaceDrop is a peer to peer file and text exchanging web application that allows you to transfer files or texts from your clipboard directly between devices without installing any app or uploading any server.">
+  <meta name="image" property="og:image" content="https://spacedrop.app/images/splash2.png">
+  <meta property="og:url" content="https://spacedrop.app">
+  <meta property="og:site_name" content="SpaceDrop">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="article:tag" content="upload, file transfer, file sharing, peer to peer, webrtc, web app">
+
+  <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    const ROOM_ID = "<%= roomId %>";
+  </script>
+</head>
+
+<body>
+  <script src="instantui.min.js"></script>
+  <script src="components.js"></script>
+  <script src="room.js"></script>
+</body>
+
+</html>
